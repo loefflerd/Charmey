@@ -11,9 +11,7 @@ Mini-course at _Swiss-French workshops in algebraic geometry_, 14th edition, Cha
 ```lean
 import Mathlib
 
-/-- If an element of a monoid has a right and a left inverse, the two inverses are equal. -/
-theorem Example1
-    (M : Type) [Monoid M] (a b c : M)
+theorem Example1 (M : Type) [Monoid M] (a b c : M)
     (h1 : a * b = 1) (h2 : c * a = 1) : 
     b = c := by
   rw [← one_mul b]
