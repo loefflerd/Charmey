@@ -26,7 +26,7 @@ theorem Example1 (M : Type) [Monoid M] (a b c : M)
 - Method 1: use https://live.lean-lang.org/ (as above)
 - Method 2: follow the instructions at https://lean-lang.org/lean4/doc/quickstart.html.
 
-If you use Method 2, then when you reach the step "*Set up Lean 4 Project*", I recommend you choose the option "Download an existing project" and use the URL for this Github page, https://github.com/loefflerd/Charmey. Then you will get a pre-prepared project with the examples from the lectures and a recent version of "Mathlib: already installed.
+If you use Method 2, then when you reach the step "*Set up Lean 4 Project*", I recommend you choose the option "Download an existing project" and use the URL for this Github page, https://github.com/loefflerd/Charmey. Then you will get a pre-prepared project with the examples from the lectures and a recent version of "Mathlib" already installed.
 
 ## Learning resources
 
