@@ -40,15 +40,29 @@ See the example file https://github.com/loefflerd/Charmey/blob/main/Charmey/Idea
 
 ### Useful tactics
 
+#### General
+
 - `rw` (rewrite): replace sub-expressions of the goal. If `h` is a proof that `X = Y`, then `rw [h]` replaces all `X`'s in the goal with `Y`'s, and `rw [<- h]` replaces all `Y`'s with `X`'s. Also `rw [...] at hyp` to rewrite in a hypothesis (not the goal).
 - `rw?`: search for rewrites that work.
+- `apply`: use a theorem from the library -- if `P` is a theorem stating that the goal is true, then `apply P` closes the main goal and opens new goals for the hypotheses of `P` (if any). `apply?` searches for theorems that imply the goal.
+
+#### Dealing with "exists" quantifiers
+
 - `use`: if the goal is that `∃ x` satisfying some condition, then `use q` will change the goal to proving that `x = q` works.
-- `obtain`: if you have a hypothesis that `∃ x` satisfying some condition, then `obtain` gets a specific `x` satisfying that condition
+- `obtain`: if you have a hypothesis `h` that `∃ x` satisfying some condition, then `obtain ⟨x, hx⟩ := h` gets a specific `x` and a proof `hx` that `x` satisfies the condition.
+
+#### Splitting proofs into steps
+
 - `have`: "I claim that..." -- introduce a claim, prove the claim, and then show that the claim implies the main goal.
 - `suffices`: "It suffices to prove that..." -- introduce a claim, prove that it implies the goal, and then prove the claim.
+
+#### Finishing off
+
 - `assumption`: the goal is already there in the context
 - `tauto`: the goal follows from the assumptions by trivial logic (understands `and`, `or`, `not` and `implies`)
-- `apply`: use a theorem from the library -- if `P` is a theorem stating that the goal is true, then `apply P` closes the main goal and opens new goals for the hypotheses of `P` (if any). `apply?` searches for theorems that imply the goal.
+
+#### Others
+
 - `induction`: if `n` is a natural number variable, then `induction n with ...` sets up a proof by induction on `n`.
 
 See https://github.com/madvorak/lean4-tactics/blob/main/README.md for a slightly longer list.
