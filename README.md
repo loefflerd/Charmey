@@ -36,7 +36,7 @@ If you use Method 2, then when you reach the step "*Set up Lean 4 Project*", I r
 
 ## Lecture 2: Proofs and tactics
 
-See the example file `Charmey/Ideals.lean` in this GitHub project.
+See the example file https://github.com/loefflerd/Charmey/blob/main/Charmey/Ideals.lean in this GitHub project.
 
 ### Useful tactics
 
