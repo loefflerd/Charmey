@@ -66,3 +66,7 @@ See the example file https://github.com/loefflerd/Charmey/blob/main/Charmey/Idea
 - `induction`: if `n` is a natural number variable, then `induction n with ...` sets up a proof by induction on `n`.
 
 See https://github.com/madvorak/lean4-tactics/blob/main/README.md for a slightly longer list.
+
+## Lecture 3: Logical foundations
+
+See slides: https://github.com/loefflerd/Charmey/blob/main/TypeTheory.pdf
